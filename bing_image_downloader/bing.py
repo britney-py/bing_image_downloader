@@ -34,7 +34,7 @@ class Bing:
         image = urllib.request.urlopen(request, timeout=self.timeout).read()
         if not imghdr.what(None, image):
             print('[Error]Invalid image, not saving {}\n'.format(link))
-            raise
+            raise Exception("'[Error]Invalid image, not saving {}\n'.format(link)")
         with open(file_path, 'wb') as f:
             f.write(image)
 

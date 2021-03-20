@@ -1,5 +1,8 @@
+###IMPORTANT NOTE:
+For watermark code changes, only follow the instructions for 
+    Installation and Usage watermark notes.
 
-## Bing Image Downloader
+### Bing Image Downloader
 <hr>
 
 Python library to download bulk of images form Bing.com.
@@ -11,9 +14,10 @@ This package uses async url, which makes it very fast while downloading.<br/>
 This program lets you download tons of images from Bing.
 Please do not download or use any image that violates its copyright terms. 
 
-### Installation <br />
+### Installation Instructions for watermark <br />
 ```sh
 pip install bing-image-downloader
+pip install Pillow
 ```
 
 or 
@@ -39,7 +43,11 @@ downloader.download(query_string, limit=100,  output_dir='dataset', adult_filter
 `timeout` : (optional, default is 60) timeout for connection in seconds.<br />
 
 
-
+### Usage for Watermark Images <br />
+cd into bing_image_downloader directory.
+Run command : python add_watermark.py apple.
+   
+Note: apple is the query string & can be replaced with any string
 
 
 ### PyPi <br />
